@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вариант №10</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+
+        }
+
+        #main {
+            display: flex;
+            height: 100vh;
+            width: 100%;
+        }
+
+        #main>#first {
+            flex: 1;
+            display: flex;
+            order: -1;
+            flex-direction: column;
+        }
+
+        #first>#one {
+            flex: 20%;
+            background: rgb(121, 255, 251);
+        }
+
+        #first>#tree {
+            flex: 90%;
+            background: rgb(121, 255, 213);
+        }
+
+        #main>#second {
+
+            display: flex;
+            flex-direction: column;
+            flex: 0 0 25%;
+        }
+
+        #second>#two {
+            flex: 20%;
+            background: rgb(12, 194, 167);
+        }
+
+        #second>#four {
+            flex: 90%;
+            background: rgb(127, 183, 255);
+
+        }
+
+        #main>#five {
+            display: flex;
+            order: 2;
+            flex-direction: row;
+            flex: 0 0 50%;
+            background: rgb(128, 106, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="first">
+            <div id="one">1</div>
+            <div id="tree">
+                <p>3</p><img src="images.jfif" alt="">
+            </div>
+        </div>
+        <div id="second">
+            <div id="two">2</div>
+            <div id="four">4</div>
+        </div>
+        <div id="five">5</div>
+    </div>
+</body>
+
+</html>

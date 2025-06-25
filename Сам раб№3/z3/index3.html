@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вариант №10</title>
+    <style>
+        #main {
+            justify-self: center;
+            height: 768px;
+            width: 1366px;
+            display: grid;
+            grid-template-columns: 383px 383px 600px;
+            grid-template-rows: 96px 670px;
+            grid-template-areas:
+                "one two five"
+                "tree four five";
+        }
+
+        #one {
+            grid-area: one;
+            background: rgb(121, 255, 251);
+        }
+
+        #two {
+            grid-area: two;
+            background: rgb(12, 194, 167);
+        }
+
+        #tree {
+            grid-area: tree;
+            background: rgb(121, 255, 213);
+        }
+
+        #four {
+            grid-area: four;
+            background: rgb(127, 183, 255);
+        }
+
+        #five {
+            grid-area: five;
+            background: rgb(128, 106, 255);
+        }
+
+
+        #one,
+        #two,
+        #tree,
+        #four,
+        #five {
+            padding: 1em;
+        }
+
+
+        @media (min-width: 480px) and (max-width: 800px) {
+            #main {
+                justify-self: center;
+                display: grid;
+                grid-template-columns: 600px 800px;
+                grid-template-rows: 96px 96px 96px;
+                grid-template-areas:
+                    "one two"
+                    "tree four"
+                    "five five";
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="one">1</div>
+        <div id="two">2</div>
+        <div id="tree">3
+        </div>
+        <div id="four">4</div>
+        <div id="five">5</div>
+    </div>
+</body>
+
+</html>
